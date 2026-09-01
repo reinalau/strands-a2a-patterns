@@ -1,0 +1,30 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ── Virtual environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Environment variables (never commit API keys; .env.example IS committed) ──
+.env
+
+# ── Run logs (the folder is kept via .gitkeep) ───────────────────────────────
+logs/*
+!logs/.gitkeep
+
+# ── Local diagnostic scripts (not published) ─────────────────────────────────
+scripts/
+
+# ── Eval reports (run artifacts; the folder is kept) ─────────────────────────
+evals/outputs/*
+!evals/outputs/.gitkeep
+
+# ── Editors / OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

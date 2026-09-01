@@ -1,0 +1,4 @@
+{"name": "sensitive-balance", "input": "Quiero consultar el saldo de mi cuenta 1234-5678-9", "metadata": {"category": "sensitive"}}
+{"name": "sensitive-transactions", "input": "Necesito los últimos movimientos de la cuenta 1234-5678-9", "metadata": {"category": "sensitive"}}
+{"name": "generic-hours", "input": "¿Cuál es el horario de atención al público?", "metadata": {"category": "generic"}}
+{"name": "generic-branches", "input": "¿Dónde hay sucursales en la ciudad?", "metadata": {"category": "generic"}}

@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# privacy-aware-routing — dependencies
+#
+# The use case relies on TWO families of Strands pieces:
+#   1. The A2A server + the A2AAgent client  ->  [a2a] extra
+#   2. The local Gemma model via Ollama       ->  [ollama] extra
+#   3. The Gemini orchestrator via LiteLLM     ->  [litellm] extra
+#
+# All extras are installed on the same strands-agents package.
+# If you only start the server, [a2a,ollama] is enough; if you only run the
+# orchestrator, [a2a,litellm]. Here we keep everything to simplify.
+# ─────────────────────────────────────────────────────────────────────────────
+
+strands-agents[a2a,ollama,litellm]>=1.0.0
+strands-agents-tools>=0.1.0
+
+# Load environment variables from .env
+python-dotenv>=1.0.0
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# ── Evaluation (Strands Evals SDK, used by the evals/ scripts) ────────────────
+strands-agents-evals>=1.2.0

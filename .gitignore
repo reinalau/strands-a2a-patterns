@@ -1,0 +1,35 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ── Virtual environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Environment variables (never commit API keys) ────────────────────────────
+# Ignored in any subfolder; .env.example IS committed.
+.env
+**/.env
+
+# ── Run logs (in any subproject; the folder is kept) ─────────────────────────
+**/logs/*
+!**/logs/.gitkeep
+
+# ── Local diagnostic scripts (not published) ─────────────────────────────────
+**/scripts/
+
+# ── Eval reports (run artifacts; the folder is kept) ─────────────────────────
+**/evals/outputs/*
+!**/evals/outputs/.gitkeep
+
+# ── Article drafts (edited/removed by hand, not published) ───────────────────
+borrador_*.md
+
+# ── Editors / OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

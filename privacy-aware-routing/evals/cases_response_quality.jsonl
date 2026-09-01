@@ -1,0 +1,2 @@
+{"name": "balance-laura", "input": "Quiero consultar el saldo de mi cuenta 1234-5678-9", "expected_output": "The balance of account 1234-5678-9 (holder Laura Bolaños) is $1.480.750,25.", "metadata": {"category": "balance"}}
+{"name": "holder-laura", "input": "¿A nombre de quién está la cuenta 1234-5678-9?", "expected_output": "Account 1234-5678-9 belongs to Laura Bolaños.", "metadata": {"category": "holder"}}
