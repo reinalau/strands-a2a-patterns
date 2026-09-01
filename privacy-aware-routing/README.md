@@ -401,7 +401,7 @@ Nota: Podés sumar otros evaluadores del SDK según lo que se quiera medir — p
 - [A2A GitHub Organization](https://github.com/a2aproject/A2A)
 - [Ollama — Gemma 4](https://ollama.com/library/gemma4)
 - [Strands Evals SDK — Quickstart](https://strandsagents.com/docs/user-guide/evals-sdk/quickstart/)
-- Artículo relacionado: *(link al artículo del blog cuando esté publicado)*
+- [Artículo relacionado](https://builder.aws.com/content/3IEOXhwX9PxCQwxhggtL5jsD1WJ/a2a-en-strands-agentes-remotos-con-routing-deterministico-y-discovery-dinamico)
 
 ## Licencia
 
