@@ -71,28 +71,28 @@ El orquestador imprime la respuesta token a token con `stream_async` en vez de `
 
 ```mermaid
 sequenceDiagram
-    participant U as Usuario
+    participant U as User
     participant O as Orchestrator (Gemini)
     participant P as A2AClientToolProvider
     participant F as Flights Agent (Gemma)
     participant H as Hotels Agent (Gemma)
     participant I as Itinerary Agent (Gemma)
 
-    U->>O: "Quiero ir a Barcelona en marzo"
-    O->>P: Descubrir agentes disponibles
+    U->>O: "I want to go to Barcelona in March"
+    O->>P: Discover available agents
     P->>F: GET agent-card.json
     P->>H: GET agent-card.json
     P->>I: GET agent-card.json
-    O->>O: Decide plan de delegación
+    O->>O: Decide delegation plan
 
     O->>F: search_flights (A2A)
-    F-->>O: opciones de vuelos
+    F-->>O: flight options
     O->>H: search_hotels (A2A)
-    H-->>O: opciones de hoteles
+    H-->>O: hotel options
 
-    O->>I: build_itinerary (A2A, con resultados previos)
-    I-->>O: itinerario armado
-    O->>U: Respuesta final integrada
+    O->>I: build_itinerary (A2A, with previous results)
+    I-->>O: assembled itinerary
+    O->>U: Integrated final response
 ```
 
 **Cuatro procesos independientes corriendo en paralelo:**
