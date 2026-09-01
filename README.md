@@ -12,7 +12,7 @@
 
 Este repo es el cuarto capítulo de la serie sobre patrones de orquestación multiagente con Strands Agents. Ya recorrimos **agents-as-tools** (un agente que delega en otros agentes-tool, todo dentro del mismo proceso), **swarm** (colaboración par a par con handoffs) y **graph** (flujos con estado y dependencias explícitas entre nodos). A2A rompe con la premisa que compartían los tres: **ya no estamos orquestando agentes que viven en el mismo proceso Python**.
 
-**Agent-to-Agent (A2A)** es un protocolo abierto (no es una invención de Strands ni de AWS) que define cómo agentes que corren en procesos, máquinas o incluso organizaciones distintas se **descubren** y se **comunican** entre sí por HTTP/JSON-RPC. Strands no reinventa el protocolo: hace un  *wrapper* con una interfaz familiar para que trabajar con un agente remoto se sienta exactamente igual que trabajar con un agente local. 
+**Agent-to-Agent (A2A)** es un protocolo abierto (no es una invención de Strands ni de AWS) que define cómo los agentes que ejecutan en en procesos, máquinas o incluso organizaciones distintas se **descubren** y se **comunican** entre sí por HTTP/JSON-RPC. Strands no reinventa el protocolo: hace un  *wrapper* con una interfaz familiar para que trabajar con un agente remoto se sienta exactamente igual que trabajar con un agente local. 
 
 Tres piezas hacen ese wrap posible:
 
