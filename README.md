@@ -52,8 +52,8 @@ Ambos casos corren 100% en local — sin AWS, sin gastar tokens — así que pod
 - [A2A Protocol — Documentación oficial](https://a2aproject.github.io/A2A/latest/)
 - [A2A GitHub Organization](https://github.com/a2aproject/A2A)
 - [Ollama — Gemma 4](https://ollama.com/library/gemma4)
-- Artículo relacionado: *(link al artículo del blog cuando esté publicado)*
-- Otros capítulos de la serie: agents-as-tools · swarm · graph
+- [Artículo relacionado](https://builder.aws.com/content/3IEOXhwX9PxCQwxhggtL5jsD1WJ/a2a-en-strands-agentes-remotos-con-routing-deterministico-y-discovery-dinamico)
+
 
 ## Licencia
 
